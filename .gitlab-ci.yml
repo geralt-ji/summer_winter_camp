@@ -7,6 +7,9 @@ default:
   cache:
     paths:
       - node_modules/
+  variables:
+    NODE_ENV: "production"
+    BASE_PATH: "/summer_winter_camp"
 
 build:
   stage: build
@@ -36,4 +39,3 @@ pages:
   only:
     - main
     - master
-
