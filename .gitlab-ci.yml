@@ -9,7 +9,6 @@ default:
       - node_modules/
 
 variables:
-  BASE_PATH: "/summer_winter_camp"
   NPM_CONFIG_PRODUCTION: "false"
   NEXT_TELEMETRY_DISABLED: "1"
 
