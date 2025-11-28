@@ -1,0 +1,39 @@
+stages:
+  - build
+  - deploy
+
+default:
+  image: node:20
+  cache:
+    paths:
+      - node_modules/
+
+build:
+  stage: build
+  script:
+    - npm ci --no-audit --no-fund
+    - npm run build
+    - rm -rf public
+    - mkdir -p public
+    - cp -r out/* public/
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+  only:
+    - main
+    - master
+
+pages:
+  stage: deploy
+  dependencies:
+    - build
+  script:
+    - echo Deploying GitLab Pages
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+    - master
+
