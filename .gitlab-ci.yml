@@ -9,8 +9,9 @@ default:
       - node_modules/
 
 variables:
-  NODE_ENV: "production"
   BASE_PATH: "/summer_winter_camp"
+  NPM_CONFIG_PRODUCTION: "false"
+  NEXT_TELEMETRY_DISABLED: "1"
 
 build:
   stage: build
