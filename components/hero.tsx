@@ -30,8 +30,7 @@ export function Hero() {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
-            由哈佛、多伦多等顶尖大学教授授课，学习Python、机器学习、人工智能，
-            通过树莓派实战项目培养工程开发能力与国际化沟通能力
+            由顶尖高校导师指导，专为初高中生设计的AI与编程实践课程。学生通过制作树莓派智能小车，学习Python编程、机器学习和深度学习等前沿技术。
           </p>
 
           {/* CTA Buttons */}
@@ -50,11 +49,11 @@ export function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto">
             <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-primary">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">200+</div>
               <div className="text-sm text-muted-foreground">优秀学员</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-primary">6+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">10+</div>
               <div className="text-sm text-muted-foreground">顶尖导师</div>
             </div>
             <div className="space-y-2">
