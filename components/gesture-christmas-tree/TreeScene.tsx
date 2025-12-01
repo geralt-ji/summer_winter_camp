@@ -111,12 +111,14 @@ function ParticleTree({ isScattered }: { isScattered: boolean }) {
   return (
     <points ref={pointsRef}>
       <bufferGeometry>
+        {/* @ts-ignore */}
         <bufferAttribute
           attach="attributes-position"
           count={currentPositions.length / 3}
           array={currentPositions} // Use the mutable array
           itemSize={3}
         />
+        {/* @ts-ignore */}
         <bufferAttribute
           attach="attributes-color"
           count={colors.length / 3}
