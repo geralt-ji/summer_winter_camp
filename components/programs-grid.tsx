@@ -9,11 +9,17 @@ const programs = [
     icon: Sun,
     title: "数据科学夏令营",
     season: "暑期项目",
-    description: "两周密集式学习体验，包含Python编程、机器学习基础、树莓派小车实战项目",
-    duration: "2周",
-    location: "线下集中授课",
-    capacity: "20-30人/期",
-    highlights: ["顶尖大学导师授课", "树莓派实战项目", "团队协作与展示", "英文汇报训练"],
+    description:
+      "两周密集式学习体验，专为中学生设计的基础入门课程，从Python编程到机器学习基础，结合树莓派智能小车项目，在动手实践中开启AI第一课。",
+    duration: "2周（暑期）",
+    location: "线下沉浸式学习",
+    capacity: "40–50人/班",
+    highlights: [
+      "顶尖高校导师亲自指导",
+      "树莓派智能车实战项目，学以致用",
+      "小组协作完成课题，锻炼团队能力",
+      "全英文项目展示，提升学术表达能力",
+    ],
     gradient: "from-orange-500/10 to-yellow-500/10",
     iconColor: "text-orange-600",
   },
@@ -22,24 +28,36 @@ const programs = [
     icon: Snowflake,
     title: "数据科学冬令营",
     season: "寒假项目",
-    description: "冬季强化课程，深入学习人工智能算法，结合实际案例进行项目开发",
-    duration: "2周",
-    location: "线下集中授课",
-    capacity: "20-30人/期",
-    highlights: ["AI算法深度学习", "实际案例分析", "项目开发实战", "职业发展指导"],
+    description:
+      "寒假强化课程，在冬季假期中系统学习人工智能核心算法，结合真实案例开展项目开发，完成从理论到实践的能力跨越。",
+    duration: "4天（寒假）",
+    location: "线上集中授课",
+    capacity: "30–40人/班",
+    highlights: [
+      "聚焦AI算法原理与实现",
+      "真实行业案例解析，贴近实际应用",
+      "完成完整数据科学项目",
+      "职业启蒙与科创规划指导",
+    ],
     gradient: "from-blue-500/10 to-cyan-500/10",
     iconColor: "text-blue-600",
   },
   {
     id: "online",
     icon: Monitor,
-    title: "线上系统课程",
+    title: "线上编程系统课",
     season: "全年开放",
-    description: "灵活的在线学习模式，系统化课程体系，适合各个水平的学生深入学习",
-    duration: "8-12周",
-    location: "线上直播+录播",
-    capacity: "小班制教学",
-    highlights: ["时间灵活安排", "系统化课程体系", "一对一辅导", "终身学习资源"],
+    description:
+      "灵活的在线学习模式，适合时间分散或希望持续提升的中学生，系统化课程体系，循序渐进构建数据科学知识体系。",
+    duration: "4–6周（自由安排进度）",
+    location: "线上直播 + 录播回放 + 一对一辅导",
+    capacity: "小班教学，关注每位学生",
+    highlights: [
+      "时间自由，适配学校课表",
+      "体系化课程设计，从基础到进阶",
+      "专属导师答疑与项目指导",
+      "结业后持续享受学习资源与社区支持",
+    ],
     gradient: "from-purple-500/10 to-pink-500/10",
     iconColor: "text-purple-600",
   },
@@ -50,9 +68,9 @@ export function ProgramsGrid() {
     <section id="programs" className="py-24 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance text-foreground">选择适合你的学习方式</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance text-foreground">选择最适合你的成长路径</h2>
           <p className="text-lg text-muted-foreground text-balance">
-            无论是密集式夏令营、冬令营，还是灵活的线上课程，我们都为你提供顶尖的教学资源
+            我们为中学生量身打造全方位的数据科学课程，涵盖线下密集营与线上系统课，匹配不同学习节奏与目标，助你从小接触前沿科技，赢在人工智能时代起跑线。
           </p>
         </div>
 
@@ -113,7 +131,13 @@ export function ProgramsGrid() {
                   </div>
 
                   <Button className="w-full tech-gradient text-primary-foreground" asChild>
-                    <Link href="#contact">了解详情</Link>
+                    <Link href="#contact">
+                      {program.id === "summer"
+                        ? "立即了解夏令营详情"
+                        : program.id === "winter"
+                        ? "立即了解冬令营详情"
+                        : "立即了解线上课程详情"}
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
