@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import "./globals.css"
+import { I18nProvider } from "@/components/i18n-provider"
 
 export const metadata: Metadata = {
   title: "SDS4A - 数据科学教育平台 | 夏令营·冬令营·线上课程",
@@ -35,7 +36,9 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className={`font-sans antialiased`}>
-        {children}
+        <I18nProvider>
+          {children}
+        </I18nProvider>
       </body>
     </html>
   )

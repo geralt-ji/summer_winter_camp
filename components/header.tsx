@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { useI18n } from "@/components/i18n-provider"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import {
@@ -15,6 +16,7 @@ import {
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
 
 export function Header() {
+  const { t, toggleLocale } = useI18n()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -115,7 +117,7 @@ export function Header() {
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg leading-none text-foreground">SDS4A</span>
-              <span className="text-xs text-muted-foreground">数据科学教育</span>
+              <span className="text-xs text-muted-foreground">{t('header.slogan')}</span>
             </div>
           </Link>
 
@@ -126,13 +128,13 @@ export function Header() {
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
                     <Link href="/" className="text-sm font-medium px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground">
-                      首页
+                      {t('header.home')}
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>往期回顾</NavigationMenuTrigger>
+                  <NavigationMenuTrigger>{t('header.pastReviews')}</NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[520px] grid grid-cols-1 gap-1">
                     <NavigationMenuLink asChild>
                       <a href={external.wechat.summer2024Kickoff} target="_blank" rel="noopener noreferrer" className="rounded-sm px-2 py-1.5">
@@ -163,7 +165,7 @@ export function Header() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>线下夏令营</NavigationMenuTrigger>
+                  <NavigationMenuTrigger>{t('header.offlineCamp')}</NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[720px] grid grid-cols-3 gap-3 p-2">
                     <div>
                       <div className="text-xs font-semibold mb-2">课程安排</div>
@@ -251,13 +253,13 @@ export function Header() {
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
                     <a href="#" className="text-sm font-medium px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground" aria-disabled>
-                      冬令营
+                      {t('header.winterCamp')}
                     </a>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>线上课程</NavigationMenuTrigger>
+                  <NavigationMenuTrigger>{t('header.onlineCourses')}</NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[720px] grid grid-cols-3 gap-3 p-2">
                     <div>
                       <div className="text-xs font-semibold mb-2">线上夏令营回顾</div>
@@ -307,7 +309,7 @@ export function Header() {
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
                     <a href={external.usCamp} target="_blank" rel="noopener noreferrer" className="text-sm font-medium px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground">
-                      美国夏令营
+                      {t('header.usCamp')}
                     </a>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -318,10 +320,10 @@ export function Header() {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-2">
             <Button variant="ghost" asChild>
-              <Link href="/enrollment/form">报名选拔</Link>
+              <Link href="/enrollment/form">{t('header.apply')}</Link>
             </Button>
-            <Button variant="outline" asChild>
-              <a href="#" aria-disabled>中文/English</a>
+            <Button variant="outline" onClick={toggleLocale}>
+              {t('header.toggle')}
             </Button>
           </div>
 
@@ -344,12 +346,12 @@ export function Header() {
                 className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors px-2 py-1"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                首页
+                {t('header.home')}
               </Link>
 
               <Accordion type="single" collapsible>
                 <AccordionItem value="past">
-                  <AccordionTrigger className="px-2">往期回顾</AccordionTrigger>
+                  <AccordionTrigger className="px-2">{t('header.pastReviews')}</AccordionTrigger>
                   <AccordionContent>
                     <div className="flex flex-col">
                       <a href={external.wechat.summer2024Kickoff} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">2024年夏令营开营</a>
@@ -362,7 +364,7 @@ export function Header() {
                 </AccordionItem>
 
                 <AccordionItem value="offline">
-                  <AccordionTrigger className="px-2">线下夏令营</AccordionTrigger>
+                  <AccordionTrigger className="px-2">{t('header.offlineCamp')}</AccordionTrigger>
                   <AccordionContent>
                     <div className="flex flex-col gap-2">
                       <a href={external.offlineCamp.schedule} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">课程安排</a>
