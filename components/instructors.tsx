@@ -1,6 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Award, BookOpen, GraduationCap } from "lucide-react"
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
+/* Original content commented out
 const instructors = [
   {
     university: "哈佛大学",
@@ -33,11 +36,18 @@ const instructors = [
     expertise: "工程实践、项目开发",
   },
 ]
+*/
+
+const collaborators = [
+  { name: 'Molei Liu', image: 'molei-liu.jpg', title: 'PhD Student in Biostatistics, Harvard T.H. Chan School of Public Health' },
+  { name: 'Doudou Zhou', image: 'doudou-zhou.jpg', title: 'PhD, Professor of Statistics & Data Science, National University of Singapore' },
+]
 
 export function Instructors() {
   return (
     <section id="instructors" className="py-24 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
+        {/* Original content commented out
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 mb-6">
             <Award className="w-4 h-4" />
@@ -91,6 +101,82 @@ export function Instructors() {
               </div>
             </CardContent>
           </Card>
+        </div>
+        */}
+
+        {/* New People Section */}
+        <div className="container mx-auto px-4 lg:px-8">
+          {/* Research Team Header */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Research Team</h1>
+             <p className="text-lg mb-5 max-w-4xl mx-auto text-muted-foreground">We believe in team science. CELEHS research team is highly interdisciplinary, consisting of researchers from many fields related to biomedical data science. We have collaborators from many institutions including Harvard, MIT, Stanford, Rand Corporation, Veteran Affairs (VA), Partner's Healthcare, and Tsinghua University.</p>
+          </div>
+
+          {/* CELEHS Director */}
+          <div className="mb-16">
+             <h2 className="text-2xl font-bold text-foreground mb-8 text-center md:text-left">CELEHS Director</h2>
+             <Card className="border-0 shadow-sm overflow-hidden bg-background">
+                <CardContent className="p-8">
+                   <div className="flex flex-col md:flex-row items-center gap-8">
+                      <div className="flex-shrink-0 text-center">
+                         <a href="https://dbmi.hms.harvard.edu/people/tianxi-cai" target="_blank" className="inline-block transition-transform hover:scale-105">
+                            <Avatar className="w-48 h-48 border-4 border-white shadow-lg">
+                               <AvatarImage src="/assets/images/tianxi-cai.jpg" alt="Tianxi Cai" className="object-cover" />
+                               <AvatarFallback>TC</AvatarFallback>
+                            </Avatar>
+                         </a>
+                         <h4 className="mt-4 text-xl font-bold">
+                            <a href="https://dbmi.hms.harvard.edu/people/tianxi-cai" target="_blank" className="text-primary hover:underline">Tianxi Cai</a>
+                         </h4>
+                      </div>
+                      <div className="space-y-6 text-center md:text-left">
+                         <div>
+                            <h5 className="text-lg font-bold text-primary mb-1">Director</h5>
+                            <p className="text-muted-foreground">Translational Data Science Center for a Learning Health System (CELEHS)</p>
+                         </div>
+                         <div>
+                            <h5 className="text-lg font-bold text-primary mb-1">John Rock Professor</h5>
+                            <p className="text-muted-foreground">Population and Translational Data Sciences, Harvard T.H. Chan School of Public Health</p>
+                         </div>
+                         <div>
+                            <h5 className="text-lg font-bold text-primary mb-1">Professor</h5>
+                            <p className="text-muted-foreground">Biomedical Informatics, Harvard Medical School</p>
+                         </div>
+                      </div>
+                   </div>
+                </CardContent>
+             </Card>
+          </div>
+
+          {/* Key Collaborators */}
+          <div>
+             <h2 className="text-2xl font-bold text-foreground mb-4">Key Collaborators</h2>
+             <p className="text-muted-foreground mb-8">Note: the names are sorted by last name in alphabetical order. Hover over the avatar to see details.</p>
+             
+             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {collaborators.map((person) => (
+                   <div key={person.name} className="text-center">
+                      <HoverCard>
+                         <HoverCardTrigger asChild>
+                            <div className="inline-block cursor-pointer group">
+                               <Avatar className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg border-2 border-transparent group-hover:border-primary">
+                                  <AvatarImage src={`/assets/images/${person.image}`} alt={person.name} className="object-cover" />
+                                  <AvatarFallback>{person.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                               </Avatar>
+                               <h6 className="font-medium text-foreground group-hover:text-primary transition-colors">{person.name}</h6>
+                            </div>
+                         </HoverCardTrigger>
+                         <HoverCardContent className="w-80 bg-popover/95 backdrop-blur-sm">
+                            <div className="space-y-2">
+                               <h4 className="text-base font-bold text-primary">{person.name}</h4>
+                               <div className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: person.title }} />
+                            </div>
+                         </HoverCardContent>
+                      </HoverCard>
+                   </div>
+                ))}
+             </div>
+          </div>
         </div>
       </div>
     </section>
