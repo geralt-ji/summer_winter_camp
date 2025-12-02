@@ -41,6 +41,7 @@ const instructors = [
 const collaborators = [
   { name: 'Molei Liu', image: 'molei-liu.jpg', title: 'PhD Student in Biostatistics, Harvard T.H. Chan School of Public Health' },
   { name: 'Doudou Zhou', image: 'doudou-zhou.jpg', title: 'PhD, Professor of Statistics & Data Science, National University of Singapore' },
+  { name: 'Chuan Hong', image: 'chuan-hong.jpg', title: 'Instructor in Biomedical Informatics, Department of Biomedical Informatics, Harvard Medical School' },
 ]
 
 export function Instructors() {

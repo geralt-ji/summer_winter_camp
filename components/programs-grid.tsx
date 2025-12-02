@@ -8,7 +8,7 @@ const programs = [
     id: "summer",
     icon: Sun,
     title: "数据科学夏令营",
-    season: "暑期项目",
+    season: "暂未开放",
     description:
       "两周密集式学习体验，专为中学生设计的基础入门课程，从Python编程到机器学习基础，结合树莓派智能小车项目，在动手实践中开启AI第一课。",
     duration: "2周（暑期）",
@@ -27,39 +27,20 @@ const programs = [
     id: "winter",
     icon: Snowflake,
     title: "数据科学冬令营",
-    season: "寒假项目",
+    season: "正在招生",
     description:
-      "寒假强化课程，在冬季假期中系统学习人工智能核心算法，结合真实案例开展项目开发，完成从理论到实践的能力跨越。",
+      "冬季课程带领高中生从大语言模型的原理出发，了解AI驱动蛋白质设计的前沿应用，通过直观的数学讲解与动手实践，构建跨学科工程化思维。",
     duration: "4天（寒假）",
     location: "线上集中授课",
     capacity: "30–40人/班",
     highlights: [
-      "聚焦AI算法原理与实现",
-      "真实行业案例解析，贴近实际应用",
-      "完成完整数据科学项目",
-      "职业启蒙与科创规划指导",
+      "数学原理与算法直观可视化",
+      "前沿AI在蛋白质设计的应用",
+      "贯穿全程的动手实验活动",
+      "培养计算与生物跨学科视野",
     ],
     gradient: "from-blue-500/10 to-cyan-500/10",
     iconColor: "text-blue-600",
-  },
-  {
-    id: "online",
-    icon: Monitor,
-    title: "线上编程系统课",
-    season: "全年开放",
-    description:
-      "灵活的在线学习模式，适合时间分散或希望持续提升的中学生，系统化课程体系，循序渐进构建数据科学知识体系。",
-    duration: "4–6周（自由安排进度）",
-    location: "线上直播 + 录播回放 + 一对一辅导",
-    capacity: "小班教学，关注每位学生",
-    highlights: [
-      "时间自由，适配学校课表",
-      "体系化课程设计，从基础到进阶",
-      "专属导师答疑与项目指导",
-      "结业后持续享受学习资源与社区支持",
-    ],
-    gradient: "from-purple-500/10 to-pink-500/10",
-    iconColor: "text-purple-600",
   },
 ]
 
@@ -74,7 +55,7 @@ export function ProgramsGrid() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {programs.map((program) => {
             const Icon = program.icon
             return (

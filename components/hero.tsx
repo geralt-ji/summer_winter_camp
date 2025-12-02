@@ -16,7 +16,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20">
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm font-medium">全年招生：夏令营·冬令营·线上课程</span>
+            <span className="text-sm font-medium">冬令营·正在招生</span>
           </div>
 
           {/* Main Heading */}
@@ -30,7 +30,7 @@ export function Hero() {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
-            由顶尖高校导师指导，专为初高中生设计的AI与编程实践课程。学生通过制作树莓派智能小车，学习Python编程、机器学习和深度学习等前沿技术。
+            由国内外顶尖导师指导，专为初高中生设计的AI与编程实践课程。学生通过制作树莓派智能小车，学习Python编程、机器学习和深度学习等前沿技术。
           </p>
 
           {/* CTA Buttons */}
