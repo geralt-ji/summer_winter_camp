@@ -10,21 +10,8 @@ export const metadata: Metadata = {
   keywords: "数据科学,夏令营,冬令营,线上课程,Python,机器学习,人工智能,编程教育",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/celehs.png",
+    apple: "/celehs.png",
   },
 }
 

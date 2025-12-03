@@ -25,7 +25,7 @@ export function CTA() {
                   className="tech-gradient text-primary-foreground text-base px-8 h-12 w-full sm:w-auto"
                   asChild
                 >
-                  <Link href="https://sds4a.org/enrollment/form" target="_blank">
+                  <Link href="/winter-camp">
                     立即报名
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Link>

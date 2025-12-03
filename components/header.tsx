@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { useI18n } from "@/components/i18n-provider"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
@@ -112,8 +113,13 @@ export function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg tech-gradient flex items-center justify-center text-primary-foreground font-bold text-lg transition-transform group-hover:scale-105">
-              S
+            <div className="relative w-10 h-10 transition-transform group-hover:scale-105">
+              <Image
+                src="/celehs.png"
+                alt="SDS4A Logo"
+                fill
+                className="object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg leading-none text-foreground">SDS4A</span>

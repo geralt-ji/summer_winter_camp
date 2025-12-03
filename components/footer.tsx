@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Twitter, Linkedin, Mail } from "lucide-react"
 
 export function Footer() {
@@ -29,8 +30,13 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-lg tech-gradient flex items-center justify-center text-primary-foreground font-bold text-lg">
-                S
+              <div className="relative w-10 h-10">
+                <Image
+                  src="/celehs.png"
+                  alt="SDS4A Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg leading-none text-foreground">SDS4A</span>
