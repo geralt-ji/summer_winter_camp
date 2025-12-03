@@ -112,7 +112,7 @@ export function ProgramsGrid() {
                   </div>
 
                   <Button className="w-full tech-gradient text-primary-foreground" asChild>
-                    <Link href="#contact">
+                    <Link href={program.id === "winter" ? "/winter-camp" : "#contact"}>
                       {program.id === "summer"
                         ? "立即了解夏令营详情"
                         : program.id === "winter"

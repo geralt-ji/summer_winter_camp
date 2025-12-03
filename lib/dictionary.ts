@@ -14,8 +14,8 @@ export const dictionary = {
       toggle: "English"
     },
     instructors: {
-      title: "科研团队",
-      description: "我们相信团队科学的力量。CELEHS 研究团队高度跨学科，由来自生物医学数据科学相关领域的众多研究人员组成。我们的合作者来自哈佛大学、麻省理工学院、斯坦福大学、兰德公司、退伍军人事务部 (VA)、Partner's Healthcare 和清华大学等多所知名机构。",
+      title: "课程导师阵容",
+      description: "我们的导师团队由多位世界名校的教授及业界资深工程师组成，拥有丰富的教学经验和实践背景，致力于为学生提供前沿、优质的教育指导与科研支持。",
       director: {
         title: "CELEHS 主任",
         name: "蔡天西",
@@ -42,6 +42,10 @@ export const dictionary = {
           title: "杜克大学生物统计与生物信息学助理教授（自2021年8月）<br/>哈佛医学院生物医学信息学博士后研究员、讲师<br/>数据科学、生物统计学与生物医学信息学交叉领域，专注于开发统计与机器学习方法用于精准医疗"
         }
       }
+    },
+    winterCampPage: {
+      title: "冬令营课程介绍",
+      description: "本次四天线上课程面向高中生，系统介绍生成式AI的核心原理与前沿应用。课程前半部分深入解析自然语言处理与大语言模型，涵盖从概率基础、词向量到Transformer架构的关键概念，并通过实践活动揭示ChatGPT等工具的工作机制。后半部分聚焦生成式AI在生物医药领域的突破性应用，重点讲解其如何驱动蛋白质设计与药物发现，帮助学生建立跨学科的AI工程思维。课程融合了直观的数学解释与动手演示，旨在培养学生的科学素养与创新视野。"
     }
   },
   en: {
@@ -85,6 +89,10 @@ export const dictionary = {
           title: "Assistant Professor of Biostatistics and Bioinformatics, Duke University (since Aug 2021)<br/>Instructor in Biomedical Informatics, Harvard Medical School<br/>Intersection of Data Science, Biostatistics, and Biomedical Informatics, focusing on statistical and machine learning methods for precision medicine"
         }
       }
+    },
+    winterCampPage: {
+      title: "Winter Camp Course Introduction",
+      description: "This four-day online course introduces high school students to the core principles and cutting-edge applications of generative AI. The first half delves into natural language processing and large language models, covering foundational concepts from probability and word vectors to the Transformer architecture, with hands-on activities demystifying the workings of tools like ChatGPT. The second half focuses on breakthrough applications in biomedicine, explaining how generative AI is powering protein design and drug discovery, helping students develop interdisciplinary AI engineering thinking. The course blends intuitive mathematical explanations with practical demonstrations, aiming to cultivate students' scientific literacy and innovative vision."
     }
   }
 };
