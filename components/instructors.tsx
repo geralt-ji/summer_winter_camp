@@ -66,7 +66,7 @@ export function Instructors() {
           {/* Key Collaborators */}
           <div>
              <h2 className="text-2xl font-bold text-foreground mb-4">{t('instructors.collaborators.title')}</h2>
-             <p className="text-muted-foreground mb-8">{t('instructors.collaborators.note')}</p>
+             {/* <p className="text-muted-foreground mb-8">{t('instructors.collaborators.note')}</p> */}
              
              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {collaborators.map((person) => (

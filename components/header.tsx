@@ -158,141 +158,30 @@ export function Header() {
                     </NavigationMenuLink>
                     <NavigationMenuLink asChild>
                       <a href={external.wechat.week1Recap2025} target="_blank" rel="noopener noreferrer" className="rounded-sm px-2 py-1.5">
-                        2025年第一周回顾
+                        2025年夏令营回顾
+                      </a>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <a href={external.onlineCamp.recap} target="_blank" rel="noopener noreferrer" className="rounded-sm px-2 py-1.5">
+                        2025线上课程回顾
                       </a>
                     </NavigationMenuLink>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>{t('header.summerCamp')}</NavigationMenuTrigger>
-                  <NavigationMenuContent className="min-w-[1000px] grid grid-cols-5 gap-3 p-2">
-                    <div>
-                      <div className="text-xs font-semibold mb-2">线下课程安排</div>
-                      <NavigationMenuLink asChild>
-                        <a href={external.offlineCamp.schedule} target="_blank" rel="noopener noreferrer" className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground">
-                          课程安排
-                        </a>
-                      </NavigationMenuLink>
-                      <div className="text-xs font-semibold mt-4 mb-2">线上夏令营</div>
-                      <NavigationMenuLink asChild>
-                        <a href={external.onlineCamp.recap} target="_blank" rel="noopener noreferrer" className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground">
-                          回顾
-                        </a>
-                      </NavigationMenuLink>
-                      <NavigationMenuLink asChild>
-                        <a href={external.onlineCamp.pythonDocs} target="_blank" rel="noopener noreferrer" className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground">
-                          Python 文档
-                        </a>
-                      </NavigationMenuLink>
-                      <NavigationMenuLink asChild>
-                        <a href={external.onlineCamp.tracking} target="_blank" rel="noopener noreferrer" className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground">
-                          学习追踪
-                        </a>
-                      </NavigationMenuLink>
-                    </div>
-                    <div>
-                      <div className="text-xs font-semibold mb-2">线下课程回放</div>
-                      <ul className="space-y-1 text-sm">
-                        <li className="font-medium mt-1">第二天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day2Intro} target="_blank" rel="noopener noreferrer">数据科学入门</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day2Viz} target="_blank" rel="noopener noreferrer">数据可视化</a></li>
-                        <li className="font-medium mt-2">第三天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day3Intro} target="_blank" rel="noopener noreferrer">统计学习入门</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day3LR} target="_blank" rel="noopener noreferrer">线性回归</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day3LRPractice} target="_blank" rel="noopener noreferrer">实践：线性回归</a></li>
-                        <li className="font-medium mt-2">第四天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day4Intro} target="_blank" rel="noopener noreferrer">机器学习入门</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day4LogReg} target="_blank" rel="noopener noreferrer">逻辑回归</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day4LogRegPractice} target="_blank" rel="noopener noreferrer">实践：逻辑回归</a></li>
-                        <li className="font-medium mt-2">第五天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day5AIIntro} target="_blank" rel="noopener noreferrer">人工智能入门</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day5Eval} target="_blank" rel="noopener noreferrer">模型评估</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day5EvalPractice} target="_blank" rel="noopener noreferrer">实践：模型评估</a></li>
-                        <li className="font-medium mt-2">第六天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day6DL} target="_blank" rel="noopener noreferrer">深度学习</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day6SSL} target="_blank" rel="noopener noreferrer">无标签学习</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day6NNPractice} target="_blank" rel="noopener noreferrer">实践：神经网络</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day6CarSSH} target="_blank" rel="noopener noreferrer">造车：SSH连接</a></li>
-                        <li className="font-medium mt-2">第七天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day7CNN1} target="_blank" rel="noopener noreferrer">CNN 第一部分</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day7CNN1Practice} target="_blank" rel="noopener noreferrer">实践：CNN I</a></li>
-                        <li className="font-medium mt-2">第八天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day8CNN2} target="_blank" rel="noopener noreferrer">CNN 第二部分</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day8CNN2Practice} target="_blank" rel="noopener noreferrer">实践：CNN II</a></li>
-                        <li className="font-medium mt-2">第九天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day9LLM1} target="_blank" rel="noopener noreferrer">大语言模型介绍 - 1</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day9LLM2} target="_blank" rel="noopener noreferrer">大语言模型介绍 - 2</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day9RL} target="_blank" rel="noopener noreferrer">强化学习</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.day9LLMApps} target="_blank" rel="noopener noreferrer">大语言模型应用</a></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div className="text-xs font-semibold mb-2">线下职业分享</div>
-                      <ul className="space-y-1 text-sm">
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.careerAndre} target="_blank" rel="noopener noreferrer">职业分享 - Andre Python</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.careerGavinBand} target="_blank" rel="noopener noreferrer">职业分享 - GavinBand</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.careerJessica} target="_blank" rel="noopener noreferrer">职业分享 - Jessica Gronsbell</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.careerYongcheng} target="_blank" rel="noopener noreferrer">职业分享 - Yongcheng Li (脑机接口)</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.careerDoudou} target="_blank" rel="noopener noreferrer">职业分享 - Doudou Zhou</a></li>
-                      </ul>
-                      <div className="text-xs font-semibold mt-3 mb-2">线下课程课件</div>
-                      <ul className="space-y-1 text-sm">
-                        <li className="font-medium mt-1">第二天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay2Intro} target="_blank" rel="noopener noreferrer">数据科学入门</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay2Viz} target="_blank" rel="noopener noreferrer">数据可视化</a></li>
-                        <li className="font-medium mt-2">第三天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay3Intro} target="_blank" rel="noopener noreferrer">统计学习入门</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay3LR} target="_blank" rel="noopener noreferrer">线性回归</a></li>
-                        <li className="font-medium mt-2">第四天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay4Intro} target="_blank" rel="noopener noreferrer">机器学习入门</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay4LogReg} target="_blank" rel="noopener noreferrer">逻辑回归</a></li>
-                        <li className="font-medium mt-2">第五天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay5AIIntro} target="_blank" rel="noopener noreferrer">人工智能入门</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay5Eval} target="_blank" rel="noopener noreferrer">模型评估</a></li>
-                        <li className="font-medium mt-2">第六天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay6DL} target="_blank" rel="noopener noreferrer">深度学习 PPT</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay6SSL} target="_blank" rel="noopener noreferrer">无标签学习 PPT</a></li>
-                        <li className="font-medium mt-2">第七天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay7CNN1} target="_blank" rel="noopener noreferrer">CNN 第一部分 PPT</a></li>
-                        <li className="font-medium mt-2">第八天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay8CNN2} target="_blank" rel="noopener noreferrer">CNN 第二部分 PPT</a></li>
-                        <li className="font-medium mt-2">第九天</li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay9LLM1PDF} target="_blank" rel="noopener noreferrer">大语言模型介绍 - 1 PDF</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay9RL} target="_blank" rel="noopener noreferrer">强化学习 PPT</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.offlineCamp.slidesDay9LLMApps} target="_blank" rel="noopener noreferrer">大语言模型应用 PPT</a></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div className="text-xs font-semibold mb-2">线上课程回放</div>
-                      <ul className="space-y-1 text-sm">
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.week1} target="_blank" rel="noopener noreferrer">第一周</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.week2} target="_blank" rel="noopener noreferrer">第二周</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.week3} target="_blank" rel="noopener noreferrer">第三周(Numpy)</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.week4} target="_blank" rel="noopener noreferrer">第四周(GPU&Dify)</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.week5} target="_blank" rel="noopener noreferrer">第五周(生物医学领域分享)</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.week6} target="_blank" rel="noopener noreferrer">第六周大咖面对面</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.pythonQA} target="_blank" rel="noopener noreferrer">Python学习问题汇总</a></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div className="text-xs font-semibold mb-2">线上课程课件</div>
-                      <ul className="space-y-1 text-sm">
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.slidesW1} target="_blank" rel="noopener noreferrer">第一周课件</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.slidesW2} target="_blank" rel="noopener noreferrer">第二周课件</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.slidesW3} target="_blank" rel="noopener noreferrer">第三周课件</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.slidesGPU} target="_blank" rel="noopener noreferrer">GPU:游戏与AI的强大引擎</a></li>
-                        <li><a className="rounded-sm px-2 py-1.5 block hover:bg-accent hover:text-accent-foreground" href={external.onlineCamp.slidesAgent} target="_blank" rel="noopener noreferrer">AI智能体科普</a></li>
-                      </ul>
-                    </div>
-                  </NavigationMenuContent>
+                  <NavigationMenuLink asChild>
+                    <Link href="/summer-camp/test" className="text-sm font-medium px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+                      {t('header.summerCamp')}
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <a href="#" className="text-sm font-medium px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground" aria-disabled>
+                    <Link href="/winter-camp" className="text-sm font-medium px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground">
                       {t('header.winterCamp')}
-                    </a>
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
@@ -312,7 +201,7 @@ export function Header() {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-2">
             <Button variant="ghost" asChild>
-              <Link href="/enrollment/form">{t('header.apply')}</Link>
+              <Link href="/winter-camp">{t('header.apply')}</Link>
             </Button>
             <Button variant="outline" onClick={toggleLocale}>
               {t('header.toggle')}
@@ -355,142 +244,21 @@ export function Header() {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="offline">
-                  <AccordionTrigger className="px-2">{t('header.summerCamp')}</AccordionTrigger>
-                  <AccordionContent>
-                    <div className="flex flex-col gap-2">
-                      <div className="px-2 text-xs font-semibold text-muted-foreground mt-2">线下夏令营</div>
-                      <a href={external.offlineCamp.schedule} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">课程安排</a>
+              <Link
+                href="/summer-camp/test"
+                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors px-2 py-1"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('header.summerCamp')}
+              </Link>
 
-                      <Accordion type="single" collapsible>
-                        <AccordionItem value="offline-replay">
-                          <AccordionTrigger className="px-2 text-sm">课程回放</AccordionTrigger>
-                          <AccordionContent>
-                            <div className="flex flex-col">
-                              <div className="px-2 py-1 font-medium">第二天</div>
-                              <a href={external.offlineCamp.day2Intro} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">数据科学入门</a>
-                              <a href={external.offlineCamp.day2Viz} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">数据可视化</a>
-                              <div className="px-2 py-1 font-medium">第三天</div>
-                              <a href={external.offlineCamp.day3Intro} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">统计学习入门</a>
-                              <a href={external.offlineCamp.day3LR} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">线性回归</a>
-                              <a href={external.offlineCamp.day3LRPractice} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">实践：线性回归</a>
-                              <div className="px-2 py-1 font-medium">第四天</div>
-                              <a href={external.offlineCamp.day4Intro} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">机器学习入门</a>
-                              <a href={external.offlineCamp.day4LogReg} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">逻辑回归</a>
-                              <a href={external.offlineCamp.day4LogRegPractice} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">实践：逻辑回归</a>
-                              <div className="px-2 py-1 font-medium">第五天</div>
-                              <a href={external.offlineCamp.day5AIIntro} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">人工智能入门</a>
-                              <a href={external.offlineCamp.day5Eval} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">模型评估</a>
-                              <a href={external.offlineCamp.day5EvalPractice} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">实践：模型评估</a>
-                              <div className="px-2 py-1 font-medium">第六天</div>
-                              <a href={external.offlineCamp.day6DL} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">深度学习</a>
-                              <a href={external.offlineCamp.day6SSL} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">无标签学习</a>
-                              <a href={external.offlineCamp.day6NNPractice} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">实践：神经网络</a>
-                              <a href={external.offlineCamp.day6CarSSH} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">造车：SSH连接</a>
-                              <div className="px-2 py-1 font-medium">第七天</div>
-                              <a href={external.offlineCamp.day7CNN1} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">CNN 第一部分</a>
-                              <a href={external.offlineCamp.day7CNN1Practice} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">实践：CNN I</a>
-                              <div className="px-2 py-1 font-medium">第八天</div>
-                              <a href={external.offlineCamp.day8CNN2} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">CNN 第二部分</a>
-                              <a href={external.offlineCamp.day8CNN2Practice} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">实践：CNN II</a>
-                              <div className="px-2 py-1 font-medium">第九天</div>
-                              <a href={external.offlineCamp.day9LLM1} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">大语言模型介绍 - 1</a>
-                              <a href={external.offlineCamp.day9LLM2} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">大语言模型介绍 - 2</a>
-                              <a href={external.offlineCamp.day9RL} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">强化学习</a>
-                              <a href={external.offlineCamp.day9LLMApps} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">大语言模型应用</a>
-                            </div>
-                          </AccordionContent>
-                        </AccordionItem>
-
-                        <AccordionItem value="offline-career">
-                          <AccordionTrigger className="px-2 text-sm">职业分享</AccordionTrigger>
-                          <AccordionContent>
-                            <div className="flex flex-col">
-                              <a href={external.offlineCamp.careerAndre} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">职业分享 - Andre Python</a>
-                              <a href={external.offlineCamp.careerGavinBand} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">职业分享 - GavinBand</a>
-                              <a href={external.offlineCamp.careerJessica} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">职业分享 - Jessica Gronsbell</a>
-                              <a href={external.offlineCamp.careerYongcheng} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">职业分享 - Yongcheng Li (脑机接口)</a>
-                              <a href={external.offlineCamp.careerDoudou} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">职业分享 - Doudou Zhou</a>
-                            </div>
-                          </AccordionContent>
-                        </AccordionItem>
-
-                        <AccordionItem value="offline-slides">
-                          <AccordionTrigger className="px-2 text-sm">课程课件</AccordionTrigger>
-                          <AccordionContent>
-                            <div className="flex flex-col">
-                              <div className="px-2 py-1 font-medium">第二天</div>
-                              <a href={external.offlineCamp.slidesDay2Intro} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">数据科学入门</a>
-                              <a href={external.offlineCamp.slidesDay2Viz} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">数据可视化</a>
-                              <div className="px-2 py-1 font-medium">第三天</div>
-                              <a href={external.offlineCamp.slidesDay3Intro} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">统计学习入门</a>
-                              <a href={external.offlineCamp.slidesDay3LR} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">线性回归</a>
-                              <div className="px-2 py-1 font-medium">第四天</div>
-                              <a href={external.offlineCamp.slidesDay4Intro} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">机器学习入门</a>
-                              <a href={external.offlineCamp.slidesDay4LogReg} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">逻辑回归</a>
-                              <div className="px-2 py-1 font-medium">第五天</div>
-                              <a href={external.offlineCamp.slidesDay5AIIntro} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">人工智能入门</a>
-                              <a href={external.offlineCamp.slidesDay5Eval} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">模型评估</a>
-                              <div className="px-2 py-1 font-medium">第六天</div>
-                              <a href={external.offlineCamp.slidesDay6DL} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">深度学习 PPT</a>
-                              <a href={external.offlineCamp.slidesDay6SSL} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">无标签学习 PPT</a>
-                              <div className="px-2 py-1 font-medium">第七天</div>
-                              <a href={external.offlineCamp.slidesDay7CNN1} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">CNN 第一部分 PPT</a>
-                              <div className="px-2 py-1 font-medium">第八天</div>
-                              <a href={external.offlineCamp.slidesDay8CNN2} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">CNN 第二部分 PPT</a>
-                              <div className="px-2 py-1 font-medium">第九天</div>
-                              <a href={external.offlineCamp.slidesDay9LLM1PDF} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">大语言模型介绍 - 1 PDF</a>
-                              <a href={external.offlineCamp.slidesDay9RL} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">强化学习 PPT</a>
-                              <a href={external.offlineCamp.slidesDay9LLMApps} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">大语言模型应用 PPT</a>
-                            </div>
-                          </AccordionContent>
-                        </AccordionItem>
-                      </Accordion>
-
-                      <div className="px-2 text-xs font-semibold text-muted-foreground mt-4">线上夏令营</div>
-                      <a href={external.onlineCamp.recap} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">回顾</a>
-                      <a href={external.onlineCamp.pythonDocs} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">Python 文档</a>
-                      <a href={external.onlineCamp.tracking} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">学习追踪</a>
-
-                      <Accordion type="single" collapsible>
-                         <AccordionItem value="online-replay">
-                           <AccordionTrigger className="px-2 text-sm">课程回放</AccordionTrigger>
-                           <AccordionContent>
-                             <div className="flex flex-col">
-                               <a href={external.onlineCamp.week1} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">第一周</a>
-                               <a href={external.onlineCamp.week2} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">第二周</a>
-                               <a href={external.onlineCamp.week3} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">第三周(Numpy)</a>
-                               <a href={external.onlineCamp.week4} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">第四周(GPU&Dify)</a>
-                               <a href={external.onlineCamp.week5} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">第五周(生物医学领域分享)</a>
-                               <a href={external.onlineCamp.week6} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">第六周大咖面对面</a>
-                               <a href={external.onlineCamp.pythonQA} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">Python学习问题汇总</a>
-                             </div>
-                           </AccordionContent>
-                         </AccordionItem>
-
-                         <AccordionItem value="online-slides">
-                           <AccordionTrigger className="px-2 text-sm">课程课件</AccordionTrigger>
-                           <AccordionContent>
-                             <div className="flex flex-col">
-                               <a href={external.onlineCamp.slidesW1} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">第一周课件</a>
-                               <a href={external.onlineCamp.slidesW2} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">第二周课件</a>
-                               <a href={external.onlineCamp.slidesW3} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">第三周课件</a>
-                               <a href={external.onlineCamp.slidesGPU} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">GPU:游戏与AI的强大引擎</a>
-                               <a href={external.onlineCamp.slidesAgent} target="_blank" rel="noopener noreferrer" className="px-2 py-1.5">AI智能体科普</a>
-                             </div>
-                           </AccordionContent>
-                         </AccordionItem>
-                      </Accordion>
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="winter">
-                  <AccordionTrigger className="px-2">冬令营</AccordionTrigger>
-                  <AccordionContent>
-                    <div className="px-2 py-1.5 text-sm text-muted-foreground">内容待补充</div>
-                  </AccordionContent>
-                </AccordionItem>
+              <Link
+                href="/winter-camp"
+                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors px-2 py-1"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('header.winterCamp')}
+              </Link>
 
 
               </Accordion>
@@ -506,7 +274,7 @@ export function Header() {
 
               <div className="flex flex-col gap-2 pt-2 border-t border-border">
                 <Button variant="ghost" asChild className="w-full">
-                  <Link href="/enrollment/form">报名选拔</Link>
+                  <Link href="/winter-camp">报名选拔</Link>
                 </Button>
                 <Button variant="outline" asChild className="w-full">
                   <a href="#" aria-disabled>中文/English</a>
