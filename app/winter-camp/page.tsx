@@ -17,12 +17,11 @@ export default function WinterCampPage() {
             {t('winterCampPage.title')}
           </h1>
 
-          <div className="aspect-video relative rounded-xl overflow-hidden shadow-2xl mb-12">
-            <Image
+          <div className="flex justify-center mb-12">
+            <img
               src="/assets/winter-images/webwxgetmsgimg.jpg"
               alt="Winter Camp"
-              fill
-              className="object-cover"
+              className="max-w-full h-auto rounded-xl shadow-2xl"
             />
           </div>
 
