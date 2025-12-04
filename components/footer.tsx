@@ -79,7 +79,7 @@ export function Footer() {
             <h3 className="font-semibold text-foreground">课程项目</h3>
             <ul className="space-y-3">
               {footerLinks.programs.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     {link.label}
                   </Link>
@@ -92,7 +92,7 @@ export function Footer() {
             <h3 className="font-semibold text-foreground">关于我们</h3>
             <ul className="space-y-3">
               {footerLinks.about.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     {link.label}
                   </Link>
@@ -102,10 +102,10 @@ export function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">支持</h3>
+            <h3 className="font-semibold text-foreground">支持中心</h3>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     {link.label}
                   </Link>
