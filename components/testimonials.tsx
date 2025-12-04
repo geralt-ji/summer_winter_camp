@@ -2,55 +2,24 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Quote, Star } from "lucide-react"
-
-const testimonials = [
-  {
-    content: "夏令营让我对AI有了全新的认识，不仅学到了实用的编程技能，更重要是培养了解决问题的思维方式。",
-    author: "张同学",
-    role: "2025夏令营学员",
-  },
-  {
-    content: "导师们都很专业，课程安排也很合理，特别是实战项目的经历对我申请大学很有帮助。",
-    author: "李同学",
-    role: "2025夏令营学员",
-  },
-  {
-    content:
-      "人都超级好！我真的好喜欢好爱，帅哥老师还有美女姐姐老师人都很好相处，很耐心地回答问题！互动式的教学真的很有效很喜欢！",
-    author: "王同学",
-    role: "2025线上课程学员",
-  },
-  {
-    content:
-      "充实的~能够获得足够的情绪价值的，能学到真正知识的，不搞任何形式主义的，是一个提升自己的好的机会。老师认真辅导，帮助同学理解问题，这次真的很满意！",
-    author: "陈同学",
-    role: "2025线上课程学员",
-  },
-  {
-    content: "非常好，课程形式特别喜欢，认识了好棒的老师，结交了朋友，依依不舍。",
-    author: "刘同学",
-    role: "2024夏令营学员",
-  },
-  {
-    content:
-      "老师和助教们都很友善亲切，教学方式让我们很放松，保持很好的学习状态，激发我们的学习兴趣，有点难，但总体很好。",
-    author: "赵同学",
-    role: "2024夏令营学员",
-  },
-]
+import { useI18n } from "@/components/i18n-provider"
+import { dictionary } from "@/lib/dictionary"
 
 export function Testimonials() {
+  const { t, locale } = useI18n()
+  const testimonials = dictionary[locale].testimonials.items
+
   return (
     <section id="testimonials" className="py-24 lg:py-32">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 mb-6">
             <Star className="w-4 h-4 fill-current" />
-            <span className="text-sm font-medium">学员真实反馈</span>
+            <span className="text-sm font-medium">{t("testimonials.badge")}</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance text-foreground">听听学员们怎么说</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance text-foreground">{t("testimonials.title")}</h2>
           <p className="text-lg text-muted-foreground text-balance">
-            200+学员的真实学习体验，98%的满意度是对我们最大的认可
+            {t("testimonials.subtitle")}
           </p>
         </div>
 
