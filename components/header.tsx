@@ -177,7 +177,7 @@ export function Header() {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href="/summer-camp/test" className="text-sm font-medium px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+                    <Link href="/summer-camp" className="text-sm font-medium px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground">
                       {t('header.summerCamp')}
                     </Link>
                   </NavigationMenuLink>
@@ -249,9 +249,10 @@ export function Header() {
                     </div>
                   </AccordionContent>
                 </AccordionItem>
+              </Accordion>
 
               <Link
-                href="/summer-camp/test"
+                href="/summer-camp"
                 className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors px-2 py-1"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -265,9 +266,6 @@ export function Header() {
               >
                 {t('header.winterCamp')}
               </Link>
-
-
-              </Accordion>
 
               <a
                 href={external.usCamp}

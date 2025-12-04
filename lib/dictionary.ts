@@ -176,6 +176,10 @@ export const dictionary = {
     winterCampPage: {
       title: "冬令营课程介绍",
       description: "<strong class=\"text-xl block mb-2\">课程导览：开启生成式AI探索之旅</strong>本次四天线上课程面向高中生，系统介绍生成式AI的核心原理与前沿应用。<br/><br/><strong class=\"text-xl block mb-2\">自然语言处理与大语言模型解析</strong>课程前半部分深入解析自然语言处理与大语言模型，涵盖从概率基础、词向量到Transformer架构的关键概念。通过实践活动揭示ChatGPT等工具的工作机制。<br/><br/><strong class=\"text-xl block mb-2\">生成式AI × 生物医药前沿应用</strong>课程后半部分聚焦生成式AI在生物医药领域的突破性应用，重点讲解其如何驱动蛋白质设计与药物发现。<br/><br/><strong class=\"text-xl block mb-2\">培养跨学科AI工程思维</strong>课程融合了直观的数学解释与动手演示，帮助学生建立跨学科的AI工程思维。旨在培养学生的科学素养与创新视野。"
+    },
+    summerCampPage: {
+      title: "夏令营课程介绍",
+      description: "<strong class=\"text-xl block mb-2\">课程导览：系统融合数据科学与硬件实战</strong>本次两周夏令营面向高中生，系统融合数据科学理论与自动驾驶硬件实战。<br/><br/><strong class=\"text-xl block mb-2\">数据科学与机器学习核心构建</strong>课程前半部分深入解析数据科学基础，涵盖从数据可视化、统计学习到线性与逻辑回归的关键概念。通过编程实践建立扎实的机器学习理论框架。<br/><br/><strong class=\"text-xl block mb-2\">深度学习 × 自动驾驶实战应用</strong>课程后半部分聚焦深度学习在计算机视觉领域的突破性应用，重点讲解卷积神经网络（CNN）与强化学习如何驱动树莓派小车实现自动驾驶与物体检测。<br/><br/><strong class=\"text-xl block mb-2\">培养软硬结合的AI工程思维</strong>课程融合了严谨的数学原理与趣味硬件项目，帮助学生建立软硬结合的AI工程思维。旨在培养学生的科学素养与解决复杂工程问题的能力。"
     }
   },
   en: {
@@ -353,6 +357,10 @@ export const dictionary = {
     winterCampPage: {
       title: "Winter Camp Course Introduction",
       description: "<strong class=\"text-xl block mb-2\">Course Overview: Embark on a Journey into Generative AI</strong>This four-day online course is designed for high school students, offering a systematic introduction to the core principles and cutting-edge applications of generative AI.<br/><br/><strong class=\"text-xl block mb-2\">Natural Language Processing and Large Language Models Explained</strong>The first half of the course delves into natural language processing and large language models, covering key concepts from probability basics and word vectors to the Transformer architecture. Hands-on activities will reveal how tools like ChatGPT work.<br/><br/><strong class=\"text-xl block mb-2\">Generative AI × Frontier Applications in Biomedicine</strong>The second half of the course focuses on the groundbreaking applications of generative AI in biomedicine, with an emphasis on how it drives protein design and drug discovery.<br/><br/><strong class=\"text-xl block mb-2\">Developing Interdisciplinary AI Engineering Thinking</strong>The course combines intuitive mathematical explanations with practical demonstrations to help students build interdisciplinary AI engineering thinking. It aims to cultivate students' scientific literacy and innovative vision."
+    },
+    summerCampPage: {
+      title: "Summer Camp Course Introduction",
+      description: "<strong class=\"text-xl block mb-2\">Course Overview: Data Science Theory & Hardware Practice</strong>This two-week summer camp is designed for high school students, systematically integrating data science theory with hands-on autonomous driving hardware projects.<br/><br/><strong class=\"text-xl block mb-2\">Foundations of Data Science & Machine Learning</strong>The first half of the course delves into the fundamentals of data science, covering key concepts from data visualization and statistical learning to linear and logistic regression. Through programming practice, students build a solid theoretical framework for machine learning.<br/><br/><strong class=\"text-xl block mb-2\">Deep Learning × Autonomous Driving Applications</strong>The second half focuses on breakthrough applications of deep learning in computer vision, highlighting how Convolutional Neural Networks (CNNs) and Reinforcement Learning drive Raspberry Pi cars to achieve autonomous driving and object detection.<br/><br/><strong class=\"text-xl block mb-2\">Cultivating Hardware-Software Integrated AI Engineering Mindset</strong>The course blends rigorous mathematical principles with engaging hardware projects, helping students establish an AI engineering mindset that combines software and hardware. It aims to cultivate students' scientific literacy and ability to solve complex engineering problems."
     }
   }
 };

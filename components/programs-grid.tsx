@@ -97,7 +97,7 @@ export function ProgramsGrid() {
                   <Button className="w-full tech-gradient text-primary-foreground" asChild>
                     <Link href={
                       program.id === "winter" ? "/winter-camp" : 
-                      program.id === "summer" ? "/summer-camp/test" : 
+                      program.id === "summer" ? "/summer-camp" : 
                       "#contact"
                     }>
                       {program.data.cta}
