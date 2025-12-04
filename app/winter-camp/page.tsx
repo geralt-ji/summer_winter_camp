@@ -17,18 +17,19 @@ export default function WinterCampPage() {
             {t('winterCampPage.title')}
           </h1>
 
-          <div className="flex justify-center mb-12">
+          <div className="mb-12">
             <img
               src={locale === 'en' ? "/assets/winter-images/webwxgetmsgimg-en.jpg" : "/assets/winter-images/webwxgetmsgimg.jpg"}
               alt="Winter Camp"
-              className="max-w-full h-auto rounded-xl shadow-2xl"
+              className="w-full h-auto rounded-xl shadow-2xl"
             />
           </div>
 
           <div className="prose prose-lg dark:prose-invert max-w-none">
-            <p className="text-lg leading-relaxed whitespace-pre-wrap">
-              {t('winterCampPage.description')}
-            </p>
+            <div 
+              className="text-lg leading-relaxed" 
+              dangerouslySetInnerHTML={{ __html: t('winterCampPage.description') }} 
+            />
           </div>
         </div>
       </div>

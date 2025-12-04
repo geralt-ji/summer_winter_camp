@@ -18,7 +18,7 @@ export const dictionary = {
       description: "我们的导师团队由多位世界名校的教授及业界资深工程师组成，拥有丰富的教学经验和实践背景，致力于为学生提供前沿、优质的教育指导与科研支持。",
       director: {
         title: "CELEHS 主任",
-        name: "蔡天西",
+        name: "蔡天西教授",
         role1: "主任",
         desc1: "学习型医疗系统转化数据科学中心 (CELEHS)",
         role2: "John Rock 讲席教授",
@@ -30,11 +30,11 @@ export const dictionary = {
         title: "核心合作导师",
         note: "注：按姓氏字母顺序排列。将鼠标悬停在头像上可查看详情。",
         molei: {
-          name: "刘默雷",
+          name: "刘默雷教授",
           title: "哥伦比亚大学公共卫生学院生物统计学助理教授<br/>哈佛大学陈曾熙公共卫生学院生物统计学博士研究生<br/>电子医疗病例和基因数据"
         },
         doudou: {
-          name: "周豆豆",
+          name: "周豆豆博士",
           title: "新加坡国立大学统计与数据科学系助理教授<br/>美国加州大学戴维斯分校统计学博士<br/>曾在哈佛大学陈曾熙公共卫生学院从事博士后研究工作"
         },
         chuan: {
@@ -45,7 +45,7 @@ export const dictionary = {
     },
     winterCampPage: {
       title: "冬令营课程介绍",
-      description: "本次四天线上课程面向高中生，系统介绍生成式AI的核心原理与前沿应用。课程前半部分深入解析自然语言处理与大语言模型，涵盖从概率基础、词向量到Transformer架构的关键概念，并通过实践活动揭示ChatGPT等工具的工作机制。后半部分聚焦生成式AI在生物医药领域的突破性应用，重点讲解其如何驱动蛋白质设计与药物发现，帮助学生建立跨学科的AI工程思维。课程融合了直观的数学解释与动手演示，旨在培养学生的科学素养与创新视野。"
+      description: "<strong class=\"text-xl block mb-2\">课程导览：开启生成式AI探索之旅</strong>本次四天线上课程面向高中生，系统介绍生成式AI的核心原理与前沿应用。<br/><br/><strong class=\"text-xl block mb-2\">自然语言处理与大语言模型解析</strong>课程前半部分深入解析自然语言处理与大语言模型，涵盖从概率基础、词向量到Transformer架构的关键概念。通过实践活动揭示ChatGPT等工具的工作机制。<br/><br/><strong class=\"text-xl block mb-2\">生成式AI × 生物医药前沿应用</strong>课程后半部分聚焦生成式AI在生物医药领域的突破性应用，重点讲解其如何驱动蛋白质设计与药物发现。<br/><br/><strong class=\"text-xl block mb-2\">培养跨学科AI工程思维</strong>课程融合了直观的数学解释与动手演示，帮助学生建立跨学科的AI工程思维。旨在培养学生的科学素养与创新视野。"
     }
   },
   en: {
@@ -92,7 +92,7 @@ export const dictionary = {
     },
     winterCampPage: {
       title: "Winter Camp Course Introduction",
-      description: "This four-day online course introduces high school students to the core principles and cutting-edge applications of generative AI. The first half delves into natural language processing and large language models, covering foundational concepts from probability and word vectors to the Transformer architecture, with hands-on activities demystifying the workings of tools like ChatGPT. The second half focuses on breakthrough applications in biomedicine, explaining how generative AI is powering protein design and drug discovery, helping students develop interdisciplinary AI engineering thinking. The course blends intuitive mathematical explanations with practical demonstrations, aiming to cultivate students' scientific literacy and innovative vision."
+      description: "<strong class=\"text-xl block mb-2\">Course Overview: Embark on a Journey into Generative AI</strong>This four-day online course is designed for high school students, offering a systematic introduction to the core principles and cutting-edge applications of generative AI.<br/><br/><strong class=\"text-xl block mb-2\">Natural Language Processing and Large Language Models Explained</strong>The first half of the course delves into natural language processing and large language models, covering key concepts from probability basics and word vectors to the Transformer architecture. Hands-on activities will reveal how tools like ChatGPT work.<br/><br/><strong class=\"text-xl block mb-2\">Generative AI × Frontier Applications in Biomedicine</strong>The second half of the course focuses on the groundbreaking applications of generative AI in biomedicine, with an emphasis on how it drives protein design and drug discovery.<br/><br/><strong class=\"text-xl block mb-2\">Developing Interdisciplinary AI Engineering Thinking</strong>The course combines intuitive mathematical explanations with practical demonstrations to help students build interdisciplinary AI engineering thinking. It aims to cultivate students' scientific literacy and innovative vision."
     }
   }
 };
