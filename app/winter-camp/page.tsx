@@ -6,7 +6,7 @@ import { useI18n } from "@/components/i18n-provider"
 import Image from "next/image"
 
 export default function WinterCampPage() {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
 
   return (
     <main className="min-h-screen">
@@ -19,7 +19,7 @@ export default function WinterCampPage() {
 
           <div className="flex justify-center mb-12">
             <img
-              src="/assets/winter-images/webwxgetmsgimg.jpg"
+              src={locale === 'en' ? "/assets/winter-images/webwxgetmsgimg-en.jpg" : "/assets/winter-images/webwxgetmsgimg.jpg"}
               alt="Winter Camp"
               className="max-w-full h-auto rounded-xl shadow-2xl"
             />
